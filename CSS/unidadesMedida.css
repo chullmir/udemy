@@ -1,0 +1,15 @@
+body{
+	
+}
+p{
+	font-size: 1.5em;
+}
+h1{
+	font-size: 3em;
+}
+.contenedor_padre{
+	font-size: 5em;
+}
+.hijo{
+	width: 10rem;
+}

@@ -1,0 +1,23 @@
+.caja{
+	background: blue;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+}
+.uno{
+	border: 7px solid #000;
+	border-radius: 20px;
+}
+.dos{
+	border: 7px dotted #000;
+	border-radius: 0px 10px 30px 50px;
+}
+.tres{
+	border: 7px dashed #000;
+	border-radius: 0px 10px 0px 10px;
+}
+.cuatro{
+	border: 7px double #000;
+	border-radius: 100%;
+	width: 600px;
+}

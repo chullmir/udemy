@@ -1,0 +1,25 @@
+.cajaPadre{
+	background: #9dedec;
+	widows: 700px;
+	overflow: hidden;
+}
+.caja{
+	width: 200px;
+	height: 200px;
+	font-size: 30px;
+	background: #33807f;
+	margin: 20px;
+}
+.uno{
+	float: left;
+}
+.dos{
+	float: right;
+}
+.articulo{
+	width: 800px;
+	background: #ccc;
+}
+.articulo img{
+	float: left;
+}

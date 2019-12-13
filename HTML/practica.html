@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Template para Post</title>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Producto</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<section class="post">
+				<article>
+					<div class="imagen">
+						<img src="img/foto2.jpeg" alt="">
+					</div>
+					<h2>Titulo de la Entrada</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aspernatur, beatae ipsam, tenetur velit animi asperiores consequatur sunt odit, iusto deserunt repudiandae enim blanditiis hic, consectetur nesciunt voluptates fugiat? Voluptatibus repellat tenetur, iste cupiditate, laborum fugiat autem incidunt. Sint eaque, blanditiis. Repudiandae voluptatibus repellat fuga laboriosam, dolorem tenetur voluptatum error mollitia minima sit natus ipsam aliquam asperiores rem dicta facilis alias sint soluta maiores facere enim at iure. Dolores repellat voluptas molestias delectus eum magnam dolorem reiciendis eos fugiat nihil.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, nam non! Totam aliquam, temporibus repudiandae corrupti aut delectus praesentium, minima sint, maiores, quae repellat ea. Velit minus placeat hic, temporibus voluptatem excepturi, quaerat quibusdam voluptates voluptate laudantium quod sit soluta sunt quasi, culpa magni facilis in error. Autem error similique aspernatur nesciunt pariatur eaque laborum, natus quo, doloremque neque molestiae, sapiente dolor. Nostrum velit, tenetur earum voluptatum asperiores at, nobis hic laboriosam ex aliquam labore omnis voluptatibus rerum quia quod.</p>
+				</article>
+			</section>
+		</section>
+		<aside>
+			<div class="widget">
+				<h3 class="titulo">Articulos Relacionados</h3>
+				<ul>
+					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
+				</ul>
+			</div>
+			<div class="widget">
+				<h3 class="titulo">Informacion</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse enim non suscipit officia quod magni facere necessitatibus error nobis, repudiandae ipsum consequatur qui quo repellat doloribus ea sint rem sequi vitae similique earum laudantium, beatae eaque? Nostrum, eaque nulla quos inventore asperiores consequatur fuga quo, autem eos, est adipisci minus.</p>
+			</div>
+		</aside>
+		<footer>
+			<p>Copyright Paulo 2019</p>
+		</footer>
+	</div>
+	<style>
+		*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+  font-family: Arial, Sans-serif;
+  font-size: 16px;
+  background: #d9d9d9; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: hidden; }
+header{
+  background: #fff;
+}
+header nav ul{
+  list-style: none;
+}
+  header nav ul {
+    list-style: none;
+    overflow: hidden; }
+    header nav ul li {
+      float: left; }
+      header nav ul li a {
+        text-decoration: none;
+        display: inline-block;
+        color: #000;
+        padding: 15px 20px; }
+        header nav ul li a:hover {
+          background: #000;
+          color: #fff; }
+
+.main {
+  width: 70%;
+  float: left;
+  background: #fff; }
+  .main .imagen {
+    width: 100%; }
+    .main .imagen img {
+      width: 100%;
+      vertical-align: top; }
+  .main .posts {
+    padding: 40px; }
+    .main .posts article h2 {
+      margin-bottom: 20px;
+      color: #424242; }
+    .main .posts article p {
+      margin-bottom: 15px;
+      line-height: 27px; }
+
+aside {
+  width: 30%;
+  float: left;
+  background: #4287f5;
+  padding: 20px;
+  color: #fff; }
+  aside .widget {
+    margin-bottom: 20px; }
+    aside .widget .titulo {
+      color: #c5e34b;
+      border-bottom: 1px solid #c5e34b;
+      margin-bottom: 10px; }
+    aside .widget ul {
+      list-style: none; }
+      aside .widget ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 0; }
+        aside .widget ul li a {
+          color: #fff;
+          text-decoration: none; }
+          aside .widget ul li a:hover {
+            color: #8f8f8f; }
+    aside .widget p {
+      line-height: 27px; }
+
+footer {
+  width: 70%;
+  overflow: hidden;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 15px 0; }
+
+@media screen and (max-width: 800px) {
+  .main {
+    width: 100%; }
+
+  aside {
+    width: 100%; }
+
+  footer {
+    width: 100%; } }
+	</style>
+
+</body>
+</html>

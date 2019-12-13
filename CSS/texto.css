@@ -1,0 +1,23 @@
+/*Cambiar la fuente de todo el texto*/
+body{
+	/*Varias fuentes por si alguna no esta disponible, selecciona la siguiente*/
+	font-family: Arial, Sans-serif, Helvetica;
+}
+h1{
+	font-family: "Times New Roman";
+	font-size: 45px;
+	font-style: normal;
+	font-weight: bold;
+	color: #eb4034;
+	text-align: left;
+	text-decoration: none;
+}
+p{
+	text-transform: lowercase;
+	text-align: justify;
+	/*letter-spacing: 10px;*/
+	line-height: 35px;
+	/*https://fonts.google.com/*/
+	font-family: 'Roboto', sans-serif;
+
+}

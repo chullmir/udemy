@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Timing</title>
+</head>
+<body>
+	<div class="contenedor">
+		<form action="">
+			<input type="text" id="numero1">
+			<p>+</p>
+			<input type="text" id="numero2">
+			<p>=</p>
+			<input type="text" id="resultado" readonly>
+			<input type="button" id="calcular" class="btn" value="Resultado">
+		</form>
+	</div>
+
+	<style>
+		* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Sans-serif;
+	background: #21295c;
+	color: #cf5c36;
+}
+
+.contenedor {
+	width: 300px;
+	margin: 20px;
+	background: #eee5e9;
+	padding: 20px;
+}
+
+form p {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+input[type="text"]{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+form .btn {
+	width: 100%;
+	background: #cf5c36;
+	color: #fff;
+	border:none;
+	cursor: pointer;
+	font-size: 16px;
+	text-align: center;
+	padding: 20px;
+	display: inline-block;
+	text-decoration: none;
+}
+	</style>
+	
+	<script>
+		document.getElementById('calcular').addEventListener('click',suma);
+		function suma(){
+			var numero1 = parseFloat(document.getElementById('numero1').value);
+			var numero2 = parseFloat(document.getElementById('numero2').value);
+			var resultado = numero1 + numero2;
+			document.getElementById('resultado').value = resultado;
+		}
+	</script>
+	
+</body>
+</html>

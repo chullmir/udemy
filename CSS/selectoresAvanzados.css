@@ -1,0 +1,24 @@
+/*HERENCIA*/
+/*Todos los elementos heredan los estilos del padre más cercano, hasta que se especifique 
+lo contrario*/
+body{
+	font-size: 20px;
+	color: blue;
+}
+article{
+	font-size: 16px;
+	color: black;
+}
+/*Selector de Hijos*/
+div > p{
+	color: orange;
+}
+/*Selector de Atributos*/
+/*Selecciona todos los elementos con el atributo entre corchetes*/
+p[class]{
+	font-weight: bold;
+}
+/*Selecciona todos los elementos con el valor del atributo entre corchetes*/
+input[type="text"]{
+	background: red;
+}

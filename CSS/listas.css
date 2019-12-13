@@ -1,0 +1,28 @@
+ol{
+	list-style: none;
+	/* Tipos: decimal | decimal-leading-zeo | lower-roman | upper-roman | lower-latin | upper-latin | lower-greek*/
+}
+ul{
+	list-style: square;
+	/* Tipos: none | disc | circle | square */
+}
+
+.menu{
+	background: #4357ad;
+	width: 200px;
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+.menu li{
+	border-bottom: 1px solid green;
+}
+.menu a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+.menu a:hover{
+	background: #4888d6;
+}

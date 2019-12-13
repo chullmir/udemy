@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadenas de Texto y Metodos</title>
+</head>
+<body>
+	<script>
+		//Las cadenas de texto se pueden escribir en comillas simples o dobles.
+		var nombreAuto1 = "Volvo XC60";
+		var nombreAuto2 = 'Volvo XC60';
+
+		// ----- Length
+		// var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		// var largo = txt.length;
+		// document.write(largo);
+
+		// ----- indexOf y lastIndexOf
+		// El método indexOf() regresa el indice (la posicion) de la primera aparicion de un texto:
+		// var txt = "Por favor, hallar la palabra 'hallar' en este texto";
+		// var pos = txt.indexOf("hallar");
+		// lastIndexOf regresa el índice de la ultima aparicion de un texto:
+		// var pos = txt.lastIndexOf("hallar");
+		// document.write(pos);
+
+		// ----- Extraer parte del texto
+		// Hay dos metodos para extraer parte de una cadena de texto:
+		// slice(inicio, fin)
+		// substr(inicio, largo)
+
+		// SLICE
+		// Recordar que inicia con el indice en 0
+		// var str = "Manzana, Banana, Kiwi";
+		// var extraer = str.slice(7, 13);
+		// var extraer = str.slice(-12,-6);
+		// var extraer = str.slice(-12);
+		
+
+		// SUBSTR
+		// Es parecido a Slice, pero el segundo parametro indica el largo que se va a recortar
+		// var extraer = str.substr(-4);
+		// document.write(extraer);
+
+		// ----- Reemplazar texto
+		// El metodo replace() reemplaza un valor por otro en una cadena de texto. No cambia el texto, sino que genera una nueva cadena de texto.
+		// var str = "Por favor, visite Microsoft";
+		// var nueva = str.replace("Microsoft", "Apple");
+		// document.write(nueva);
+
+		// ----- Convertir a Mayusculas y Minusculas
+		// var texto = "Hola Mundo";
+		// document.write(texto.toUpperCase());
+		// document.write(texto.toLowerCase());
+
+		// ----- Trim
+		// var texto = "             Hola Mundo                   ";
+		// console.log(texto.trim());
+		
+		// ----- Convertir texto a Arreglo
+		var texto = "a b c d e";
+		console.log(texto.split(""));
+
+		
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

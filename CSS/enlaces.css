@@ -1,0 +1,22 @@
+a{
+	font-size: 30px;
+	text-decoration: none;
+}
+/*Enlace sin vistar*/
+a:link{
+	color:red;
+}
+/*Enlace ya visitado*/
+a:visited{
+	color:green;
+}
+/*Enlace cuando se pasa el mouse por encima*/
+a:hover{
+	background: #F9A03F;
+	text-decoration: underline;
+}
+/*Enlace mientras se hace click sobre él*/
+a:active{
+	background: #050ceb;
+	text-decoration: line-through;
+}

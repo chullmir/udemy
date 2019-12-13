@@ -1,0 +1,31 @@
+.oculto{
+	background: #b6e3e2;
+	display: none;
+}
+/*Visibility: hidden: sirve para trabajar con Javascript cuando queremos mostrar u ocultar el elemento*/
+/*Display: none: se va del documento*/
+.caja{
+	width: 200px;
+	background: aqua;
+	height: 300px;
+	overflow: auto;
+}
+.contenedor{
+	background: gainsboro;
+	width: 500px;
+}
+.bloque{
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+.marron{
+	background: brown;
+	z-index: 10;
+}
+.azul{
+	background: blue;
+	bottom: 50px;
+	left: 50px;
+	z-index: 100;
+}

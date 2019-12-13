@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetos</title>
+</head>
+<body>
+	<script>
+		// Los objetos son una coleccion de valores nomenclados.
+		// Los valores se escriben en parejas de nombre (propiedad) : valor.
+
+		var nombre = "Juan";
+		var apellido = "Perez";
+
+		var nombre2 = "Esteban";
+		var apellido2 = "Quito";
+
+		var juan = {
+			nombre: "Juan", 
+			apellido: "Perez", 
+			edad: 50, 
+			nacionalidad: "Argentino",
+			bio: function(){
+				return this.nombre + " tiene " + this.edad + " años.";
+			}
+		};
+
+		// Si lleva parentesis es un metodo, si no es una propiedad
+
+		// document.write(juan.bio())
+
+		var esteban = new Object();
+		esteban.nombre = "Esteban";
+		esteban.apellido = "Quito";
+		esteban.edad = 60;
+		esteban.nacionalidad = "Chileno";
+
+		function persona(nombre, apellido, edad, nacionalidad){
+			this.nombre = nombre;
+			this.apellido = apellido;
+			this.edad = edad;
+			this.nacionalidad = nacionalidad;
+		}
+
+		var raul = new persona("Raul", "Teicher", 65, "Argentino");
+
+		document.write(raul.nacionalidad);
+		
+		
+
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

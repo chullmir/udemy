@@ -1,0 +1,34 @@
+.caja{
+	width: 150px;
+	height: 150px;
+	margin: 50px;
+	background: orange;
+	/*transition: width 2s;*/
+	/*transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: ease;
+	transition-delay: 3s;*/
+	transition: all 2s ease 0s;
+
+/* Velocidad de Transiciones
+ease - inicio lento, despues rapido y termina lento
+linear - misma velocida de inicio a fin
+ease-in - inicio lento
+ease-out - final lento
+ease-in-out - inicio lento y final lento
+*/
+
+	
+
+
+
+}
+.caja:hover{
+	width: 300px;
+	transform: rotate(30deg);
+	background: gray;
+}
+
+/*Para crear una transicion hay que especificar dos cosas
+- La propiedad CSS a la que le queremos agregar un efecto
+- La duracion del efecto*/

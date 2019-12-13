@@ -1,0 +1,28 @@
+/*Selector Universal: selecciona todos los elementos de la página*/
+*{
+
+}
+
+/*Selector de etiquetas: selecciona todos los elementos*/
+
+h1{
+	color:blue;
+}
+p{
+	color:red;
+}
+div p{
+	color: black;
+	font-size: 20px;
+}
+div p a{
+	color: green;
+}
+/*Selectores de clase*/
+.grande{
+	font-size: 30px;
+}
+/*Selector de ID*/
+#rojo{
+	color:red;
+}

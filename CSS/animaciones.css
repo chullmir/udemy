@@ -1,0 +1,32 @@
+.caja{
+	width: 150px;
+	height: 150px;
+	margin: 50px;
+	background: orange;
+/*	animation-name: colores;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 0s;*/
+	/*animation: colores 1s ease infinite 3s;*/
+	animation: tamano 3s ease 2;
+
+}
+/* Velocidad de la Curva
+ease - inicio lento, despues rapido y termina lento
+linear - misma velocida de inicio a fin
+ease-in - inicio lento
+ease-out - final lento
+ease-in-out - inicio lento y final lento
+*/
+
+@keyframes tamano{
+	0% {width: 150px;}
+	50%{width: 450px;}
+	100% {width: 300px;}
+}
+
+@keyframes colores{
+	from {background: orange;}
+	to {background: blue;}
+}

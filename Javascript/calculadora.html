@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+</head>
+<body>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container{
+			width: 400px;
+			margin: 20px;
+			padding: 20px;
+			background: #dfe8df;
+		}
+		form p{
+			text-align: center;
+			margin-bottom: 20px;
+			font-size: 2em;
+		}
+		input{
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 20px;
+			text-align: center;
+			font-size: 1.5em;
+		}
+		form #calcular{
+			width: 100%;
+			background: #0d4f82;
+			color: #fff;
+			padding: 20px;
+			font-size: 1.2em;
+			border:none;
+			cursor: pointer;
+			text-align: center;
+		}
+	</style>
+	<div class="container">
+		<form action="">
+			<input type="text" id="numero1">
+			<p>+</p>
+			<input type="text" id="numero2">
+			<p>=</p>
+			<input type="text" id="resultado" readonly>
+			<div id="calcular">Resultado</div>
+		</form>
+	</div>
+
+	<script>
+		document.getElementById('calcular').addEventListener('click',suma);
+		function suma(){
+			var numero1 = parseFloat(document.getElementById('numero1').value);
+			var numero2 = parseFloat(document.getElementById('numero2').value);
+			var resultado = numero1 + numero2;
+			document.getElementById('resultado').value = resultado;
+
+		}
+
+
+
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+	background: #f2f2f2;
+}
+form{
+	background: #fff;
+	width: 600px;
+	margin: 30px auto;
+	padding: 20px;
+}
+form input{
+	display: block;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea{
+	width: 80%;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid #226fc1;
+}
+form textarea{
+	height: 120px;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus{
+	background: lightblue;
+}
+form input[type="submit"]{
+	width: 200px;
+	margin: 5px auto;
+	border: 1px solid green;
+	color: green;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+form input[type="submit"]:hover{
+	background: green;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

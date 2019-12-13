@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones</title>
+</head>
+<body>
+
+	<script>
+		// Las variables pueden tener dos tipos de alcance: Global o Local. 
+		// ------- Variable Local
+		// Van dentro de una funcion y solo se puede acceder dentro de ellas. 
+
+		// codigo aqui NO PUEDE usar nombreAnimal
+		// console.log(nombreAnimal);
+
+		// function animales() {
+		// 	var nombreAnimal = "Tigre";
+		// 	// codigo aqui dentro SI PUEDE usar nombreAnimal
+		// 	console.log(nombreAnimal);
+		// }
+		// animales();
+
+		// ------- Variable Global
+		// Es una variable a la que se tiene acceso en todo el codigo, incluyendo cualquier funcion
+		var nombreAnimal = "León";
+		function llamarAnimal(){
+			console.log(nombreAnimal);
+		}
+		llamarAnimal();
+
+		// Dentro de una función se puede buscar hacia afuera, pero no hacia adentro
+		// ----- IMPORTANTE
+		// Si una variable se declara fuera de una funcion, es global. 
+		// Si es dentro con la palabra “var”, es local. Si no lleva “var” es global.
+
+		function saludo(){
+			var mensaje = 'Hola';
+		}
+		saludo();
+		console.log(mensaje);
+
+
+
+
+	</script>
+	
+</body>
+</html>

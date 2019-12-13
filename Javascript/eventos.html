@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos</title>
+</head>
+<body>
+	<style>
+		.caja{
+			width: 200px;
+			height: 200px;
+			background: orange;
+			margin: 10px;
+			display: inline-block;
+		}
+	</style>
+	<button id="boton">Apretar</button>
+	<div class="container" id="container">
+		<div class="caja"></div>
+	</div>
+
+	<script>
+		// function saludo(){
+		// 	alert('Hola');
+		// }
+		var btnSaludar = document.getElementById('boton');
+		// btnSaludar.addEventListener('mouseout',saludo);
+		btnSaludar.addEventListener('mouseover',crearCaja);
+		function crearCaja(){
+			var caja = document.createElement('div');
+			caja.className = "caja";
+			var container = document.getElementById('container');
+			container.appendChild(caja);
+		}
+
+		// Listado de eventos:
+		// https://www.w3schools.com/js/js_htmldom_events.asp
+		// https://developer.mozilla.org/en-US/docs/Web/Events
+
+		// Eventos mas utilizados: click, focus, blur, change, onload, mouseover, mouseout, resize, submit
+
+	</script>
+</body>
+</html>

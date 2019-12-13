@@ -1,0 +1,19 @@
+.caja{
+	width: 150px;
+	height: 150px;
+	background: orange;
+	margin: 50px;
+}
+.caja:hover{
+	/*transform: rotate(30deg);*/
+	/*transform: translate(50px, 10px);*/
+	/*transform: scale(2,10);*/
+	transform: skew(0deg,20deg);
+}
+/*
+Transform nos permite:
+- Rotar Elementos
+- Trasladar elementos
+- Escalar Elementos
+- Sesgar Elementos
+*/

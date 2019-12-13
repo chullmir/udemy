@@ -1,0 +1,11 @@
+/*Selector: elemento al que aplicamos los efectos*/
+body{
+	/*Propiedad: efecto que le queremos dar a los elementos
+	Valor que le aplicamos a la propiedad*/
+	background: #e2e2e2;
+}
+p{
+	background: #444444;
+	width: 400px;
+	padding: 20px;
+}

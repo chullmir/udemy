@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos Temporales</title>
+</head>
+<body>
+	<!-- <button id="btn-countdown">Iniciar</button> -->
+	<!-- <button id="reloj">Mostrar Tiempo</button> -->
+	<!-- <input type="text" id="txt"> -->
+	<button id="detener">Detener</button>
+
+	<script>
+		var myVar = setInterval(setColor,3000);
+		function setColor() {
+			var docu = document.body;
+			docu.style.backgroundColor = docu.style.backgroundColor == "yellow" ? "pink" : "yellow";
+		}
+		document.getElementById('detener').addEventListener('click',stopColor);
+		function stopColor(){
+			clearInterval(myVar);
+		}
+
+		// (condicion) ? resultado verdadero : resultado falso
+
+
+
+		// var intervalo = setInterval(hola,3000);
+		// document.getElementById('detener').addEventListener('click',function(){
+		// 	clearInterval(intervalo);
+		// })
+
+
+
+
+		// document.getElementById('reloj').addEventListener('click',textoTiempo);
+		// function textoTiempo(){
+		// 	var texto = document.getElementById('txt');
+		// 	setTimeout(function(){texto.value = "2 segundos"}, 2000);
+		// 	setTimeout(function(){texto.value = "4 segundos"}, 4000);
+		// 	setTimeout(function(){texto.value = "6 segundos"}, 6000);
+		// }
+
+
+
+
+
+		function hola(){
+			alert('Hola mundo');
+		}
+		// // setTimeout(hola,3000);
+		// var tiempo = setTimeout(hola,3000);
+		// clearTimeout(tiempo);
+		// document.getElementById('btn-countdown').addEventListener('click',function(){
+		// 	setTimeout(hola,3000);
+		// });
+		// setTimeout(funcion a ejecutar, tiempo en milisegundos)
+	</script>
+	
+</body>
+</html>

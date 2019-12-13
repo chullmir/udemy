@@ -1,0 +1,20 @@
+p::first-line{
+	background: violet;
+}
+p::first-letter{
+	color: #ff0000;
+	font-size: 30px;
+}
+.intro::first-letter{
+	background: gray;
+}
+h1::before{
+	content: 'Voy antes del encabezado';
+	display: block;
+	background: yellow;
+}
+h1::after{
+	content: 'Voy despues';
+	display: block;
+	background: green;
+}

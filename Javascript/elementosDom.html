@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Agregar elementos al DOM</title>
+</head>
+<body>
+	<style>
+		.caja{
+			background: DodgerBlue;
+			width: 300px;
+			margin: 10px;
+			padding: 20px;
+			text-align: center;
+		}
+		.naranja{
+			background: orange;
+		}
+	</style>
+	<div class="container" id="container">
+		<div class="caja" id="primeraCaja">1. Lorem ipsum.</div>
+		<div class="caja">2. Lorem ipsum.</div>
+		<div class="caja">3. Lorem ipsum.</div>
+		<div class="caja">4. Lorem ipsum.</div>
+	</div>
+
+	<script>
+		// ------ Crear nodos
+		// 1. Crear el elemento
+		var caja = document.createElement("div");
+		// 2. Crear el nodo de texto
+		var contenido = document.createTextNode("Hola mundo");
+		// 3. Juntar el elemento con el nodo de texto
+		caja.appendChild(contenido);
+		// 4. Definir los atributos del elemento
+		caja.setAttribute("class","caja");
+		// 5. Posicionar el elemento en el documento
+		// var container = document.getElementById('container');
+		// container.appendChild(caja);
+
+		// ------ Modificar la clase o ID de un elemento
+		caja.className = "caja naranja";
+		// caja.id = "primeraCaja";
+
+		var cajas = document.getElementsByClassName("caja");
+		var padre = cajas[3].parentNode;
+		var primeraCaja = document.getElementById("primeraCaja");
+
+		// padre.insertBefore(caja,cajas[2]);
+
+		// Si quiero reemplazar un nodo por otro:
+		// padre.replaceChild(caja,cajas[1]);
+
+		// Para eliminar nodos:
+		padre.removeChild(cajas[3]);
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

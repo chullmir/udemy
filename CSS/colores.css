@@ -1,0 +1,16 @@
+.caja{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	background: aqua;
+	/*https://www.w3schools.com/colors/colors_names.asp*/
+}
+.azul_rgb{
+	background: rgb(0,0,255);
+}
+.verde_rgb{
+	background: rgb(0%,100%,0%);
+}
+.hex{
+	background: #f00;
+}

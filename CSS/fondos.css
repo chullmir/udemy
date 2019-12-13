@@ -1,0 +1,17 @@
+body{
+	width: 100%;
+	height: 735px;
+	/*background: red;*/
+	/*background: #e2e2e2;*/
+	background: url('media/playa.jpg');
+	background-repeat: no-repeat;
+	/*  repeat | no-repeat | repeat-x | repeat-y  */
+	background-size: auto;
+	/*BACKGROUND-SIZE
+	auto: Valor por defecto, el ancho y alto de la imagen.
+	ancho y alto: Si solo ponemos el primer valor, el segundo sera automatico.
+	porcentaje:  Porcentaje del ancho y alto que tendra el fondo del contenedor padre.
+	cover: Ajusta el ancho de la imagen para que abarque el ancho del contenedor padre.
+	contain: Ajusta la imagen para que abarque el ancho y alto del contenedor padre.*/
+	background-attachment: fixed;  /*scroll | fixed*/
+}

@@ -1,0 +1,7 @@
+@font-face{
+	font-family: 'Oswald';
+	src:url('fuentes/Oswald/Oswald-Regular.ttf');
+}
+p{
+	font-family: 'Oswald';
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arreglos / Arrays</title>
+</head>
+<body>
+	
+	<script>
+		// var auto1 = "Saab";
+		// var auto2 = "Volvo";
+		// var auto3 = "BMW";
+
+		// var auto = ["Saab", "Volvo", "BMW"];
+
+		
+
+		// Recordar que los indices de un arreglo comienzan con 0 y no con uno. 0 es el primer elemento, 1 el segundo y asi...
+
+		// Para cambiar el valor de un elemento del array:
+		// auto[0] = "Ford";
+
+		// console.log(auto[0]);
+
+		// Ademas de cambiar los valores, podemos agregar elementos:
+
+		// auto[3] = "Volkswagen";
+
+		// console.log(auto.length);
+
+		// Para agregar al final:
+
+		// auto[auto.length] = "Honda";
+
+		// console.log(auto);
+
+		var nombres = ["Paulo", "Ailin", "Adriana", "Raul", "Antonella", "Laura", "Gary", "Magdalena"];
+
+		// Con el punto indicamos que se trata de un metodo.
+
+		//------ Length
+		var largo = nombres.length;
+		
+		var ultimo = nombres[nombres.length-1];
+		// document.write(ultimo);
+
+		//------ Join: para unir los elementos con caracteres elegidos
+		// document.write(nombres.join("--"));
+
+		//------ Push (agregar elementos) y Pop (quitar elementos)
+		// El metodo push() agrega un elemento al final del array
+		// nombres.push("Leon");
+		// nombres.push("Esteban");
+		// El metodo pop() elimina el elemento final del array. 
+		// nombres.pop();              // Quita el ultimo elemento
+
+		
+
+		//En general se guarda en una variable:
+		// var sacar = nombres.pop();
+
+		
+
+		//------ Shift y Unshift
+		//Son como pop y push pero al principio del Array en vez de al final
+
+		// var hola = nombres.shift();
+
+		// document.write(hola);
+		// document.write("<br>");
+		
+
+		// nombres.unshift("Leon");
+
+		// document.write(nombres);
+
+		//------ Splice
+		// document.write(nombres);
+		// nombres.splice(5,2);
+		// nombres.splice(5,0,"Pablo");
+		// document.write("<br>");
+		// document.write(nombres);
+		// variable.splice(lugarDelArray, elementosBorrados, elementosAgregados);
+		// var nuevaFamilia = nombres.splice(0,2);
+		// document.write(nuevaFamilia);
+
+		//------ Concat
+		// El metodo concat une distintos arrays en uno solo
+		// var arr1 = ["Cecilia", "Lorena"];
+		// var arr2 = ["Emilio", "Tobias", "Linus"];
+		// var arr3 = ["Robin", "Tim"];
+		// var misHijos = arr1.concat(arr2,arr3);
+		// document.write(misHijos);
+
+		//------ Para convertir a texto
+		// console.log(nombres.toString());
+
+		//------ Sort y Reverse
+		// Para ordenar nuestro array:
+		// nombres.sort();
+		// Para invertir el orden de nuestro array:
+		nombres.sort().reverse();
+		document.write(nombres);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

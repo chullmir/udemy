@@ -1,0 +1,27 @@
+/*Link no visitado*/
+a:link{
+	color: red;
+}
+/*Link ya fue  visitado*/
+a:visited{
+	color:green;
+}
+/*Flotamos con el mouse*/
+a:hover{
+	color: pink;
+}
+/*Link seleccionado*/
+a:active{
+	color:black;
+}
+.oculto{
+	display: none;
+	background: yellow;
+	padding: 20px;
+}
+div:hover p{
+	display: block;
+}
+div p:last-child{
+	background: violet;
+}

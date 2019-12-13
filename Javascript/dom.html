@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Introducción al DOM</title>
+	</head>
+	<body>
+		<style>
+			.caja{
+				background: DodgerBlue;
+				width: 300px;
+				margin: 10px;
+				padding: 20px;
+				text-align: center;
+			}
+		</style>
+		<div class="caja">1. Lorem ipsum.</div>
+		<div class="caja">2. Lorem ipsum.</div>
+		<div class="caja">3. Lorem ipsum.</div>
+		<div class="caja">4. Lorem ipsum.</div>
+		<div id="main">
+			<p>Hola</p>
+		</div>
+		<script>
+			// Formas de acceder a elementos 
+			// document.getElementById(id); (el mas importante, en singular. Por eso las clases se usan para CSS y los ID para JS.)
+			// document.getElementsByTagName(tag); (en plural)
+			// document.getElementsByClassName(class); (en plural)
+			var caja = document.getElementsByTagName("div");
+			var main = document.getElementById("main");
+
+
+
+
+
+
+
+		</script>
+		
+	</body>
+</html>

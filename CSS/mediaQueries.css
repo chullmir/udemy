@@ -1,0 +1,47 @@
+body{
+	background: brown;
+	color: black;
+}
+.ejemplo{
+	background: yellow;
+	padding: 20px;
+	display: none;
+}
+@media screen and (min-width: 600px){
+	.ejemplo{
+		display: block;
+	}
+}
+
+/* En pantallas de 992px de ancho o menos, el color de fondo sea azul */
+/*@media screen and (max-width: 992px){
+	body{
+		background: blue;
+		color: white;
+	}
+}*/
+/* En pantallas de 600px de ancho o menos, el color de fondo sea oliva */
+/*@media screen and (max-width: 600px){
+	body{
+		background: olive;
+		color: white;
+	}
+}*/
+
+/*.columna{
+	float: left;
+	width: 25%;
+	font-size: 32px;
+}
+@media screen and (max-width: 992px){
+	.columna{
+		width: 50%;
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 600px){
+	.columna{
+		width: 100%;
+		font-size: 12px;
+	}
+}*/
